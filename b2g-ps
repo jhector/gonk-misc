@@ -36,6 +36,9 @@ toolbox ps $args | (
     if [ "${rest/*b2g*/b2g}" = "b2g" ]; then
         b2g[${pid}]=1
     fi
+    if [ "${rest/*supervisor*/supervisor}" = "supervisor" ]; then
+        b2g[${pid}]=1
+    fi
   done
 
   # This is the format of the output of "toolbox ps"
