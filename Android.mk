@@ -352,6 +352,8 @@ endif
 # populated as a part of this rule, and may even be populated before this
 # rule executes
 PRESERVE_DIRS := distribution
+# Preserve /system/b2g/plugins/ as well
+PRESERVE_DIRS += plugins
 ifeq ($(PRESERVE_B2G_WEBAPPS), 1)
 PRESERVE_DIRS += webapps
 endif
